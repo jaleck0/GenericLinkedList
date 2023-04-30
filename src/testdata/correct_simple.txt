@@ -1,0 +1,45 @@
+PRC 'MemoryC' (version 5)
+-------------------------
+
+
+MENU
+====
+  [1] Allocate mMemory
+  [2] Free memory
+  [3] Show lists
+  [4] Show/hide menu
+  [5] Quit
+choice: printing of MENU is diabled
+FreeList:
+---------
+  0:  addr:1000  size: 100
+AllocList:
+----------
+  <empty>
+[ALLOC] address: 1000 (20 byte)
+[ALLOC] address: 1020 (30 byte)
+[ALLOC] address: 1050 (2 byte)
+FreeList:
+---------
+  0:  addr:1052  size:  48
+AllocList:
+----------
+  0:  addr:1000  size:  20
+  1:  addr:1020  size:  30
+  2:  addr:1050  size:   2
+[FREE]  address: 1020 (30 byte)
+[FREE]  address: 1000 (20 byte)
+FreeList:
+---------
+  0:  addr:1000  size:  50
+  1:  addr:1052  size:  48
+AllocList:
+----------
+  0:  addr:1050  size:   2
+[FREE]  address: 1050 (2 byte)
+FreeList:
+---------
+  0:  addr:1000  size: 100
+AllocList:
+----------
+  <empty>
